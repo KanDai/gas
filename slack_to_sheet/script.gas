@@ -39,7 +39,7 @@ function setSlackLog() {
         sheet.getRange(lastrow + i + 1, 2).setValue(messages[i].text);
         // リンクがあればリンクURL
         if (messages[i].attachments) {
-            sheet.getRange(lastrow + i + 1, 3).setValue(messages[i].attachments[0].title_link);
+            sheet.getRange(lastrow + i + 1, 3).setValue(messages[i].attachments[0].title + String.fromCharCode(10) + messages[i].attachments[0].title_link);
         }
     }
 }
