@@ -7,7 +7,7 @@ function getSlackLog() {
         // Channel ID
         'channel': 'xxxxxxxxxx',
         // 25時間分のメッセージ取得
-        'oldest': parseInt( new Date() / 1000 ) - (60 * 60 * 25 * 1)
+        'oldest': parseInt( new Date() / 1000 ) - (60 * 60 * 25)
     }
 
     // パラメータの設定
